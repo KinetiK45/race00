@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<h1>Calculator</h1>
+<div class="main">
+    <div class="basic">
+        <div class="results">
+            <div id="history"></div>
+            <div id="result">0</div>
+        </div>
+        <div class="buttons">
+            <button class="button memory" onclick="fill_from_memory()">MR</button>
+            <button class="button memory" onclick="clearLocalStorage()">MC</button>
+            <button class="button memory" onclick="mem_add()">M+</button>
+            <button class="button memory" onclick="mem_remove()">M-</button>
+
+            <button class="button clear" onclick="clear_results()">AC</button>
+            <button class="button clear" onclick="clear_last()">C</button>
+            <button class="button" id="show_convert" onclick="show_convert()" style="grid-column: span 2;">Conversion</button>
+            <button class="button operation">(</button>
+            <button class="button operation">)</button>
+            <button class="button toggle" onclick="change_sign()">+/-</button>
+            <button class="button" id="copy" onclick="copy()">Copy result</button>
+            <button class="button operation">!</button>
+            <button class="button operation">^</button>
+            <button class="button operation">√</button>
+
+            <button class="button operation">%</button>
+
+
+
+            <button class="button number">000</button>
+            <button class="button number">π</button>
+            <button class="button operation">∛</button>
+            <button class="button operation">÷</button>
+
+            <button class="button number">7</button>
+            <button class="button number">8</button>
+            <button class="button number">9</button>
+            <button class="button operation">*</button>
+            <button class="button number">4</button>
+            <button class="button number">5</button>
+            <button class="button number">6</button>
+            <button class="button operation">+</button>
+            <button class="button number">1</button>
+            <button class="button number">2</button>
+            <button class="button number">3</button>
+            <button class="button operation">-</button>
+            <button class="button number">0</button>
+            <button class="button number">.</button>
+            <button class="button result" style="grid-column: span 2;" onclick="solve()">=</button>
+        </div>
+    </div>
+    <div class="optional">
+        <div class="convert">
+            <div class="buttons_conv">
+                <button class="button c_1" value="1">centimeters</button>
+                <button class="button c_1" value="100000">kilometers</button>
+                <button class="button c_1" value="100">meters</button>
+                <button class="button c_2" value="1">grams</button>
+                <button class="button c_2" value="1000">kilograms</button>
+                <button class="button c_2" value="1000000">tonnes</button>
+                <button class="button c_3" value="1">square centimeters</button>
+                <button class="button c_3" value="1000000">square kilometers</button>
+                <button class="button c_3" value="10000">square meters</button>
+                <button class="button c_3" value="100000000">hectares</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
